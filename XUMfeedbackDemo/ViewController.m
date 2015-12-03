@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "XUMFeedbackViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<XUMFeedbackViewControllerDelegate>
 
 @end
 
@@ -22,6 +23,19 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)feedbackAction:(id)sender
+{
+    XUMFeedbackViewController *feedbackVC = [XUMFeedbackViewController new];
+    feedbackVC.delegate = self;
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:feedbackVC];
+    [self presentViewController:navController animated:YES completion:nil];
+}
+
+- (void)didDismissXUMFeedbackViewController:(XUMFeedbackViewController *)vc
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

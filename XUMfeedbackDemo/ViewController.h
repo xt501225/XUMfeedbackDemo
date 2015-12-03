@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)feedbackAction:(id)sender;
 
 @end
 

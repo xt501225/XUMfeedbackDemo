@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "UMFeedback.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [UMFeedback setAppkey:@"565fea0867e58e516400181e"];
+    
     return YES;
 }
 
