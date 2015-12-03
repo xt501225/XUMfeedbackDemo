@@ -19,3 +19,5 @@
 * UMfeedback的sdk中引用了UMFeedbackViewController，这是官方代码中的一个类。作为sdk，引入UI显然是不好的。
   所以XUMfeedback我新建了一个空的UMFeedbackViewController，防止编译出错。
 
+##License
+XUMfeedback is published under MIT License. See the LICENSE file for more.
