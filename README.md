@@ -1,5 +1,6 @@
 # XUMfeedback
 友盟反馈自定义界面
+[详细介绍](http://www.jianshu.com/p/91db240770cc)
 
 ##XUMfeedback是什么?
 因为官方的反馈UI代码比较老，而且不太好看，所以利用友盟反馈sdk，写了一个新的反馈界面
